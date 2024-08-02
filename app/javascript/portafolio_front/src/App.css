@@ -1,12 +1,11 @@
-.landing {
-  background: rgb(25,24,28);
-background: linear-gradient(180deg, rgba(25,24,28,1) 3%, rgba(32,22,51,1) 44%, rgba(32,22,51,1) 69%, rgba(25,24,28,1) 98%);
+.home {
+  background-image: url("./img/backporta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.education {
-  background-color: #19181C;
-}
-
-.nav {
-  background-color: #19181C;
+.maincard{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,0.11436449579831931) 30%, rgba(191,191,191,0.0919555322128851) 85%);
 }

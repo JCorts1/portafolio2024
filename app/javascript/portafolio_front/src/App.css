@@ -1,11 +1,16 @@
 .home {
-  background-image: url("./img/backporta.jpg");
+  background-image: url("./img/backporta.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .maincard{
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,0.11436449579831931) 30%, rgba(191,191,191,0.0919555322128851) 85%);
+  background: rgb(66,66,66);
+  background: radial-gradient(circle, rgba(66,66,66,0.6895133053221288) 7%, rgba(0,0,0,0.7035189075630253) 63%);
+}
+
+.presentation {
+  background: rgb(66,66,66);
+background: radial-gradient(circle, rgba(66,66,66,0.6895133053221288) 7%, rgba(0,0,0,0.7035189075630253) 63%);
 }

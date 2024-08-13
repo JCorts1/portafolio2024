@@ -19,13 +19,15 @@ const Home = () => {
             <img className='w-20' src="./src/img/html.gif" alt="" />
             <img className='w-20' src="./src/img/css.gif" alt="" />
             <img className='w-16' src="./src/img/tailwind.png" alt="" />
-            <img className='w-16' src="./src/img/jslogo.gif" alt="" />
+            <img  className="w-16" src="./src/img/bootstrap.png" alt="" />
+            <img  className="w-16" src="./src/img/figma.gif" alt="" />
+            <img className='w-16 ml-2' src="./src/img/jslogo.gif" alt="" />
             <img className='w-16' src="./src/img/react.gif" alt="" />
-            <img className='w-14 ml-3' src="./src/img/stimulus.png" alt="" />
+            <img className='w-14 ml-1' src="./src/img/stimulus.png" alt="" />
             <img  className="w-16" src="./src/img/ruby.png" alt="" />
+            <img  className="w-16 ml-2" src="./src/img/rails.png" alt="" />
             <img  className="w-16" src="./src/img/github.gif" alt="" />
-            <img src="" alt="" />
-
+            <img  className="w-16" src="./src/img/postgresql.png" alt="" />
           </div>
 
         </div>

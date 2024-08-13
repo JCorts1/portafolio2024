@@ -28,8 +28,11 @@ const Home = () => {
             <img  className="w-16" src="./src/img/postgresql.png" alt="" />
           </div>
         </div>
-        <div className="link">
-          <a className="w-10" href="#"><img className="w-40" src="./src/img/blog.png" alt="" /></a>
+        <div className="links grid grid-cols-2 gap-4 items-center mt-6 mb-10 ml-12">
+          <a href="#"><img className="img-link w-62 rounded-lg" src="./src/img/projects.png" alt="" /></a>
+          <a href="#"><img className="img-link w-44 rounded-lg" src="./src/img/blog.png" alt="" /></a>
+          <a href="#"><img className="img-link w-62 rounded-lg" src="./src/img/contact.png" alt="" /></a>
+          <a href="#"><img className="img-link w-56 rounded-lg" src="./src/img/resume.png" alt="" /></a>
         </div>
       </div>
     </div>

@@ -1,5 +1,3 @@
-import Navbar from '../components/Navbar'
-
 const Home = () => {
   return (
     <div className='home w-screen h-screen m-0 p-0 flex justify-center items-center'>
@@ -29,9 +27,10 @@ const Home = () => {
             <img  className="w-16" src="./src/img/github.gif" alt="" />
             <img  className="w-16" src="./src/img/postgresql.png" alt="" />
           </div>
-
         </div>
-
+        <div className="link">
+          <a className="w-10" href="#"><img className="w-40" src="./src/img/blog.png" alt="" /></a>
+        </div>
       </div>
     </div>
   )

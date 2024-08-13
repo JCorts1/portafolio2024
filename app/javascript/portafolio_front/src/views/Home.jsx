@@ -27,6 +27,7 @@ const Home = () => {
             <img  className="w-16" src="./src/img/bootstrap.png" alt="" />
             <img  className="w-16" src="./src/img/rails.png" alt="" />
             <img  className="w-16" src="./src/img/figma.gif" alt="" />
+            <img  className="w-16" src="./src/img/postgresql.png" alt="" />
           </div>
 
         </div>

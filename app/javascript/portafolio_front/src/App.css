@@ -1,8 +1,9 @@
+
 .home {
   background-image: url("./img/backporta.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 .maincard{

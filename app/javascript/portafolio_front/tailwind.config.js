@@ -15,7 +15,10 @@ export default {
         '6': '6px',
         '8': '8px',
         '14': '14px',
-
+      },
+      fontFamily: {
+        sans: ['Roboto Condensed', 'sans-serif'],
+        sedgwick: ['Sedgwick Ave', 'sans-serif'],
       },
     },
   },

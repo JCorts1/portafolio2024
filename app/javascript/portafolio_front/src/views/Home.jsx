@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Home = () => {
   return (
     <div className='home w-screen h-screen m-0 p-0 flex justify-center items-center'>
@@ -29,10 +31,10 @@ const Home = () => {
           </div>
         </div>
         <div className="links grid grid-cols-2 gap-4 items-center mt-6 mb-10 ml-12">
-          <a href="#"><img className="img-link w-62 rounded-lg" src="./src/img/projects.png" alt="" /></a>
-          <a href="#"><img className="img-link w-44 rounded-lg" src="./src/img/blog.png" alt="" /></a>
-          <a href="#"><img className="img-link w-62 rounded-lg" src="./src/img/contact.png" alt="" /></a>
-          <a href="#"><img className="img-link w-56 rounded-lg" src="./src/img/resume.png" alt="" /></a>
+          <Link to="/projects"><img className="img-link w-62 rounded-lg" src="./src/img/projects.png" alt="" /></Link>
+          <Link to="/blog"><img className="img-link w-44 rounded-lg" src="./src/img/blog.png" alt="" /></Link>
+          <Link to="/contact"><img className="img-link w-62 rounded-lg" src="./src/img/contact.png" alt="" /></Link>
+          <Link to="/resume"><img className="img-link w-56 rounded-lg" src="./src/img/resume.png" alt="" /></Link>
         </div>
       </div>
     </div>

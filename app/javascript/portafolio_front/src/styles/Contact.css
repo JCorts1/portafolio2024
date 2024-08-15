@@ -1,0 +1,13 @@
+.contact-form {
+  background-image: url("../img/contactimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card-form {
+  background: rgb(66,66,66);
+  background: radial-gradient(circle, rgba(66,66,66,0.6895133053221288) 7%, rgba(0,0,0,0.7035189075630253) 63%);
+}

@@ -18,19 +18,19 @@ const Contact = () => {
 
   return (
     <div className='contact-form flex justify-center items-center'>
-      <div className='card-form w-8/12 h-4/6 rounded-lg'>
-        <div className='form-side'>
+      <div className='card-form w-8/12 h-4/6 rounded-lg flex'>
+        <div className='form-side w-6/12 h-full flex justify-center'>
         <form onSubmit={handleSubmit} className='form-post flex flex-col justify-center items-center'>
-          <div className='name-post'>
-            <label htmlFor="nameMessage">Your name / Organization</label>
-            <input id="nameMessage" onChange={(event)=> {
+          <div className='name-post flex flex-col text-xl mb-4'>
+            <label htmlFor="nameMessage" className='text-white'>Your name / Organization</label>
+            <input id="nameMessage" className='w-56 rounded-lg' onChange={(event)=> {
             setMessage({...message, name:event.target.value})
             }} />
           </div>
 
-          <div className='email-post'>
-            <label htmlFor="emailMessage">Email</label>
-            <input id="emailMessage" onChange={(event)=> {
+          <div className='email-post mb-4'>
+            <label htmlFor="emailMessage" className='text-white text-xl flex flex-col'>Email</label>
+            <input className='w-56 rounded-lg' id="emailMessage" onChange={(event)=> {
               setMessage({...message, email:event.target.value})
             }}/>
           </div>
@@ -38,15 +38,18 @@ const Contact = () => {
           <div className='content-post'>
             <textarea onChange={(event) => {
               setMessage({...message, content:event.target.value})
-            }}></textarea>
+            }} cols="30" rows="8" className='mt-4 rounded-lg'></textarea>
           </div>
 
-          <div className='button-post'>
-            <button type="submit">Drop a Line</button>
+          <div className='button-post ml-36 mt-4'>
+            <button className='button-form font-sedgwick' type="submit">Drop a Line</button>
           </div>
         </form>
         </div>
-
+        <div className='image-side w-6/12 flex flex-col justify-evenly items-center'>
+            <img className='w-11/12' src="./src/img/letscreate.png" alt="lets-create" />
+            <img className='w-10/12' src="./src/img/together.png" alt="" />
+        </div>
       </div>
 
     </div>

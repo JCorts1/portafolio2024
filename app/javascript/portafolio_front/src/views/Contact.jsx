@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { useState } from 'react'
+import "../styles/Contact.css"
 
 const Contact = () => {
   const [message, setMessage] = useState({
@@ -16,8 +17,10 @@ const Contact = () => {
   }
 
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
+    <div className='contact-form flex justify-center items-center'>
+      <div className='card-form w-8/12 h-4/6 rounded-lg'>
+        <div className='form-side'>
+        <form onSubmit={handleSubmit} className='form-post flex flex-col justify-center items-center'>
           <div className='name-post'>
             <label htmlFor="nameMessage">Your name / Organization</label>
             <input id="nameMessage" onChange={(event)=> {
@@ -42,6 +45,10 @@ const Contact = () => {
             <button type="submit">Drop a Line</button>
           </div>
         </form>
+        </div>
+
+      </div>
+
     </div>
   )
 }

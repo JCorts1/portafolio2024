@@ -13,7 +13,6 @@ const Contact = () => {
     event.preventDefault();
     axios
         .post("http://127.0.0.1:3000/messages", { message: message });
-        render();
   }
 
   return (

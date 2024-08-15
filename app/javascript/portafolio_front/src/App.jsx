@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { useState } from 'react'
-import Messages from './components/Messages'
 import Home from './views/Home'
+import Contact from './views/Contact'
 
 import './App.css'
 
@@ -12,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
       </BrowserRouter>
     </div>

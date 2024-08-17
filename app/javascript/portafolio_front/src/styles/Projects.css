@@ -1,0 +1,8 @@
+.projects {
+  background-image: url("../img/contactimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+}

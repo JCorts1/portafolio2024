@@ -8,11 +8,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import avatar from "../img/avatar.jpg"
+import localland from "../img/localland.png"
+import localmap from "../img/localmap.png"
+import localevent from "../img/localevent.png"
+import localchat from "../img/localchat.png"
+import localbookings from "../img/localbookings.png"
 
 const projectsPics = [
-  avatar,
-  "https://unsplash.com/photos/a-bottle-of-diors-nail-polish-next-to-a-bottle-of-dior-q4cVyu5XO-I",
+  localland,
+  localmap,
+  localevent,
+  localchat,
+  localbookings
 ];
 
 export function CarouselOrientation() {
@@ -24,10 +31,10 @@ export function CarouselOrientation() {
       orientation="vertical"
       className="w-full max-w-xs dark"
     >
-      <CarouselContent className="-mt-1 h-[200px]">
+      <CarouselContent className="-mt-1 h-[500px]">
         {projectsPics.map((pic, index) => (
           <CarouselItem key={index} className="pt-1 md:basis-1/2">
-            <div className="p-1">
+            <div className="">
               <Card>
                 <CardContent className="flex items-center justify-center p-6">
                   <img src={pic} alt="" />

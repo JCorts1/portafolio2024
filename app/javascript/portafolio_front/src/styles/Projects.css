@@ -6,3 +6,9 @@
   width: 100vw;
   height: 100vh;
 }
+
+.projects-filter {
+  background: rgb(32,32,32);
+  background: radial-gradient(circle, rgba(32,32,32,0.6460959383753502) 7%, rgba(0,0,0,0.6629026610644257) 63%);
+  
+}

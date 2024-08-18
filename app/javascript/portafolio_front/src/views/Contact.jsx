@@ -26,6 +26,7 @@ const Contact = () => {
 
   return (
     <div className="contact-form flex justify-center items-center">
+      <div className="contact-filter w-screen h-screen flex justify-center items-center">
       <div className="card-form w-8/12 h-4/6 rounded-lg flex">
         <div className="form-side w-6/12 h-full flex justify-center">
           <form
@@ -37,7 +38,7 @@ const Contact = () => {
                 Your name / Organization
               </label>
               <input
-                value={ message.name}
+                value={ message.name }
                 id="nameMessage"
                 className="w-56 rounded-lg"
                 onChange={(event) => {
@@ -75,9 +76,9 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <div className="button-post ml-36 mt-4">
+            <div className="button-post ml-32 mt-4">
               <button className="button-form font-sedgwick" type="submit">
-                Drop a Line
+                Get in Touch
               </button>
             </div>
           </form>
@@ -91,6 +92,8 @@ const Contact = () => {
           <img className="w-10/12" src="./src/img/together.png" alt="" />
         </div>
       </div>
+      </div>
+
     </div>
   );
 };

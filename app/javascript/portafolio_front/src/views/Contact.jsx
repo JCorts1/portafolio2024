@@ -77,7 +77,7 @@ const Contact = () => {
             </div>
 
             <div className="button-post ml-32 mt-4">
-              <button className="button-form font-sedgwick" type="submit">
+              <button className="button mr-1 font-sedgwick" type="submit">
                 Get in Touch
               </button>
             </div>

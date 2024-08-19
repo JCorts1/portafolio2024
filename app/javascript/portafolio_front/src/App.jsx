@@ -3,6 +3,7 @@ import Home from "./views/Home";
 import Contact from "./views/Contact";
 import Projects from "./views/Projects";
 import BlogCreate from "./views/BlogCreate";
+import BlogIndex from "./views/BlogIndex"
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog-post" element={<BlogCreate />} />
+          <Route path="blog" element={<BlogIndex />}/>
         </Routes>
       </BrowserRouter>
     </div>

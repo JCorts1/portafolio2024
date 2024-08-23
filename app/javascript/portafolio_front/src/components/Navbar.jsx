@@ -1,16 +1,35 @@
-import React from 'react'
+import React from "react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
+import "../styles/Navbar.css"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <div className='nav flex justify-center sticky top-0'>
-          <ul className='nav-items text-white flex flex-row m-5'>
-            <li className='m-3 hover:text-customBlue'><a href="#">Education</a></li>
-            <li className='m-3'><a href="#">Projects</a></li>
-            <li className='m-3'><a href="#">About me</a></li>
-            <li className='m-3'><a href="">Contact</a></li>
-          </ul>
-        </div>
-  )
-}
+    <div className="flex justify-end p-10">
+      <NavigationMenu>
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="navbar">Nav</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <NavigationMenuLink><Link to="/">Home</Link></NavigationMenuLink>
+              <NavigationMenuLink><Link to="/projects">Projects</Link></NavigationMenuLink>
+              <NavigationMenuLink><Link to="/blog">Blog</Link></NavigationMenuLink>
+              <NavigationMenuLink><Link to="/contact">Contact</Link></NavigationMenuLink>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

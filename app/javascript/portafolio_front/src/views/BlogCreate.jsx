@@ -1,6 +1,8 @@
 import React from 'react'
 import axios from 'axios'
 import { useState } from 'react'
+import Navbar from '@/components/Navbar'
+
 
 const BlogCreate = () => {
 
@@ -18,6 +20,7 @@ const BlogCreate = () => {
 
   return (
     <div className='bg-[#000] w-screen h-screen'>
+      <Navbar />
       <form onSubmit={handleSubmit} className='flex flex-col w-10/12 items-center pt-44'>
         <label htmlFor="blogTitle" className='text-white'>Title:</label>
         <input onChange={(event)=> {

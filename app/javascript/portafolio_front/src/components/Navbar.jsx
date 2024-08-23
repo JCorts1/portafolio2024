@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/navigation-menu";
 import "../styles/Navbar.css"
 import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
@@ -18,12 +20,12 @@ const Navbar = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="navbar">Nav</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <NavigationMenuLink><Link to="/">Home</Link></NavigationMenuLink>
-              <NavigationMenuLink><Link to="/projects">Projects</Link></NavigationMenuLink>
-              <NavigationMenuLink><Link to="/blog">Blog</Link></NavigationMenuLink>
-              <NavigationMenuLink><Link to="/contact">Contact</Link></NavigationMenuLink>
+            <NavigationMenuTrigger className="bg-primary text-white mr-10"><FontAwesomeIcon className="text-2xl" icon={faBars} /></NavigationMenuTrigger>
+            <NavigationMenuContent className="nav-content bg-primary">
+              <NavigationMenuLink className="nav-item font-sedgwick m-5"><Link to="/">Home</Link></NavigationMenuLink>
+              <NavigationMenuLink className="nav-item font-sedgwick m-5"><Link to="/projects">Projects</Link></NavigationMenuLink>
+              <NavigationMenuLink className="nav-item font-sedgwick m-5"><Link to="/blog">Blog</Link></NavigationMenuLink>
+              <NavigationMenuLink className="nav-item font-sedgwick m-5"><Link to="/contact">Contact</Link></NavigationMenuLink>
             </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>

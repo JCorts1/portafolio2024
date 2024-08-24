@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="projects-filter w-screen h-screen flex flex-col">
         <Navbar />
         <div className="projects-content  w-screen h-screen flex items-center ">
-          <div className="local-loop  p-10 w-6/12 h-5/6 rounded-lg flex justify-between items-center">
+          <div className="local-loop ml-20 p-10 w-6/12 h-5/6 rounded-lg flex justify-between items-center">
             <div className="project-text w-60 flex flex-col">
               <h2 className="text-white text-4xl mb-7 font-sedgwick">
                 Local Loop

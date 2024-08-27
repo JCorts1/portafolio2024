@@ -1,5 +1,6 @@
 import ResumeDownload from "@/components/ResumeDownload"
 import { Link } from "react-router-dom"
+import html from "../img/HTML.gif"
 
 const Home = () => {
   return (
@@ -18,17 +19,17 @@ const Home = () => {
             With more than one year of experience.
           </p>
           <div className='languages grid grid-cols-4 gap-4 items-center m-2'>
-            <img className='w-16' src="./src/img/html.gif" alt="" />
-            <img className='w-16' src="./src/img/css.gif" alt="" />
-            <img className='w-14' src="./src/img/tailwind.png" alt="" />
-            <img  className="w-14" src="./src/img/bootstrap.png" alt="" />
-            <img  className="w-14" src="./src/img/figma.gif" alt="" />
-            <img className='w-14 ml-2' src="./src/img/jslogo.gif" alt="" />
-            <img className='w-14' src="./src/img/react.gif" alt="" />
-            <img className='w-12 ml-1' src="./src/img/stimulus.png" alt="" />
-            <img  className="w-14" src="./src/img/ruby.png" alt="" />
-            <img  className="w-14 ml-2" src="./src/img/rails.png" alt="" />
-            <img  className="w-14" src="./src/img/github.gif" alt="" />
+            <img className='w-16' src={html} alt="" />
+            <img className='w-16' src="/src/img/css.gif" alt="" />
+            <img className='w-14' src="/src/img/tailwind.png" alt="" />
+            <img  className="w-14" src="/src/img/bootstrap.png" alt="" />
+            <img  className="w-14" src="/src/img/figma.gif" alt="" />
+            <img className='w-14 ml-2' src="/src/img/jslogo.gif" alt="" />
+            <img className='w-14' src="/src/img/react.gif" alt="" />
+            <img className='w-12 ml-1' src="/src/img/stimulus.png" alt="" />
+            <img  className="w-14" src="/src/img/ruby.png" alt="" />
+            <img  className="w-14 ml-2" src="/src/img/rails.png" alt="" />
+            <img  className="w-14" src="/src/img/github.gif" alt="" />
             <img  className="w-14" src="./src/img/postgresql.png" alt="" />
           </div>
         </div>

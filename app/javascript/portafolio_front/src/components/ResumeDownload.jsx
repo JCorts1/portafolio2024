@@ -1,4 +1,5 @@
 import React from 'react';
+import resumeimg from "../img/resume.png"
 
 const ResumeDownload = () => {
   return (
@@ -8,7 +9,7 @@ const ResumeDownload = () => {
         download="JuanCortes_Resume.pdf" // This suggests the download filename
         className="download-button"
       >
-        <img className="img-link w-56 rounded-lg" src="./src/img/resume.png" alt="" />
+        <img className="img-link w-56 rounded-lg" src={resumeimg} alt="" />
       </a>
     </div>
   );

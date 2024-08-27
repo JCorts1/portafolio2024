@@ -1,6 +1,21 @@
 import ResumeDownload from "@/components/ResumeDownload"
 import { Link } from "react-router-dom"
 import html from "../img/HTML.gif"
+import cssicon from "../img/CSS.gif"
+import tailicon from "../img/tailwind.png"
+import bootstrapicon from "../img/bootstrap.png"
+import figmaicon from "../img/figma.gif"
+import jsicon from "../img/jslogo.gif"
+import reacticon from "../img/react.gif"
+import stimulusicon from "../img/stimulus.png"
+import rubyicon from "../img/ruby.png"
+import railsicon from "../img/rails.png"
+import githubicon from "../img/github.gif"
+import postgresicon from "../img/postgresql.png"
+import projectsimg from "../img/projects.png"
+import blogimg from "../img/blog.png"
+import contactimg from "../img/contact.png"
+
 
 const Home = () => {
   return (
@@ -20,23 +35,23 @@ const Home = () => {
           </p>
           <div className='languages grid grid-cols-4 gap-4 items-center m-2'>
             <img className='w-16' src={html} alt="" />
-            <img className='w-16' src="/src/img/css.gif" alt="" />
-            <img className='w-14' src="/src/img/tailwind.png" alt="" />
-            <img  className="w-14" src="/src/img/bootstrap.png" alt="" />
-            <img  className="w-14" src="/src/img/figma.gif" alt="" />
-            <img className='w-14 ml-2' src="/src/img/jslogo.gif" alt="" />
-            <img className='w-14' src="/src/img/react.gif" alt="" />
-            <img className='w-12 ml-1' src="/src/img/stimulus.png" alt="" />
-            <img  className="w-14" src="/src/img/ruby.png" alt="" />
-            <img  className="w-14 ml-2" src="/src/img/rails.png" alt="" />
-            <img  className="w-14" src="/src/img/github.gif" alt="" />
-            <img  className="w-14" src="./src/img/postgresql.png" alt="" />
+            <img className='w-16' src={cssicon} alt="" />
+            <img className='w-14' src={tailicon} alt="" />
+            <img  className="w-14" src={bootstrapicon} alt="" />
+            <img  className="w-14" src={figmaicon} alt="" />
+            <img className='w-14 ml-2' src={jsicon} alt="" />
+            <img className='w-14' src={reacticon} alt="" />
+            <img className='w-12 ml-1' src={stimulusicon} alt="" />
+            <img  className="w-14" src={rubyicon} alt="" />
+            <img  className="w-14 ml-2" src={railsicon} alt="" />
+            <img  className="w-14" src={githubicon} alt="" />
+            <img  className="w-14" src={postgresicon} alt="" />
           </div>
         </div>
         <div className="links grid grid-cols-2 gap-4 items-center mt-6 mb-10 ml-12">
-          <Link to="/projects"><img className="img-link w-62 rounded-lg" src="./src/img/projects.png" alt="" /></Link>
-          <Link to="/blog"><img className="img-link w-44 rounded-lg" src="./src/img/blog.png" alt="" /></Link>
-          <Link to="/contact"><img className="img-link w-62 rounded-lg" src="./src/img/contact.png" alt="" /></Link>
+          <Link to="/projects"><img className="img-link w-62 rounded-lg" src={projectsimg} alt="" /></Link>
+          <Link to="/blog"><img className="img-link w-44 rounded-lg" src={blogimg} alt="" /></Link>
+          <Link to="/contact"><img className="img-link w-62 rounded-lg" src={contactimg} alt="" /></Link>
           <ResumeDownload/>
         </div>
       </div>

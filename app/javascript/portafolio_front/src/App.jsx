@@ -1,3 +1,4 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
@@ -7,10 +8,20 @@ import BlogIndex from "./views/BlogIndex"
 
 import "./App.css";
 
+// const routes = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <App />,
+//   },
+//   { path: '/reportes', element: <AppPepe /> },
+//   { path: '/juancho', element: <AppPepe /> },
+// ]);
+
+
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -18,7 +29,7 @@ function App() {
           <Route path="/blog-post" element={<BlogCreate />} />
           <Route path="blog" element={<BlogIndex />}/>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }

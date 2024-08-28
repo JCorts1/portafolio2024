@@ -1,4 +1,5 @@
 import ResumeDownload from "@/components/ResumeDownload"
+import "../styles/Home.css"
 import { Link } from "react-router-dom"
 import html from "../img/HTML.gif"
 import cssicon from "../img/CSS.gif"
@@ -19,21 +20,20 @@ import contactimg from "../img/contact.png"
 
 const Home = () => {
   return (
-    <div className='home w-screen h-screen m-0 p-0 flex justify-center items-center'>
-      <div className="home-filter h-screen w-screen flex justify-center items-center">
+    <div className='home  m-0 p-0 '>
+      <div className="home-filter">
       <div className='maincard w-5/12 h-5/6 rounded-lg flex flex-col justify-center items-center'>
         <div className="avatar"></div>
         <h1 className='text-white text-6xl m-10 font-sedgwick'>I am Jay Cortes</h1>
         <h2 className='text-white text-3xl'>Full_Stack Web_Developer</h2>
       </div>
-      <div className='w-5/12 h-5/6 flex flex-col justify-center items-center'>
-        <div className='presentation m-10 rounded-lg flex flex-col items-center'>
-
-          <p className='text-presentation text-white text-left text-xl p-2'>Hey! You can call me Jay!
+      <div className='presentation-father flex flex-col justify-center items-center'>
+        <div className='presentation rounded-lg flex flex-col items-center'>
+          <p className='text-presentation mb-10 text-white text-left text-2xl p-2'>Hey! You can call me Jay!
             I am a Web Developer with a strong foundation in full-stack development. Graduated from Le Wagon Bootcamp.
             With more than one year of experience.
           </p>
-          <div className='languages grid grid-cols-4 gap-4 items-center m-2'>
+          <div className='languages grid grid-cols-4 gap-4 items-center mb-10'>
             <img className='w-16' src={html} alt="" />
             <img className='w-16' src={cssicon} alt="" />
             <img className='w-14' src={tailicon} alt="" />
@@ -48,11 +48,11 @@ const Home = () => {
             <img  className="w-14" src={postgresicon} alt="" />
           </div>
         </div>
-        <div className="links grid grid-cols-2 gap-4 items-center mt-6 mb-10 ml-12">
-          <Link to="/projects"><img className="img-link w-62 rounded-lg" src={projectsimg} alt="" /></Link>
-          <Link to="/blog"><img className="img-link w-44 rounded-lg" src={blogimg} alt="" /></Link>
-          <Link to="/contact"><img className="img-link w-62 rounded-lg" src={contactimg} alt="" /></Link>
-          <ResumeDownload/>
+        <div className="links grid grid-cols-2 gap-4 items-center mt-6 mb-10">
+          <Link to="/projects"><img className="img-linkprojects rounded-lg" src={projectsimg} alt="" /></Link>
+          <Link to="/blog"><img className="img-linkblog rounded-lg" src={blogimg} alt="" /></Link>
+          <Link to="/contact"><img className="img-linkcontact rounded-lg" src={contactimg} alt="" /></Link>
+          <ResumeDownload className="img-linkresume"/>
         </div>
       </div>
       </div>

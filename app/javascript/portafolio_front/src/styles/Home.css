@@ -43,8 +43,26 @@
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
 
+  .presentation-father {
+    margin-top: 40px;
+    width: 80%;
+  }
 
+  .img-linkprojects{
+    width: 200px
+  }
 
+  .img-linkblog {
+    width: 150px;
+  }
+
+  .img-linkcontact {
+    width: 200px;
+  }
+
+  .img-linkresume{
+    width: 180px;
+  }
 
 }
 

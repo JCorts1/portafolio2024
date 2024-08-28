@@ -8,13 +8,13 @@ const Projects = () => {
     <div className="projects w-screen h-screen">
       <div className="projects-filter w-screen h-screen">
         <Navbar />
-        <div className="projects-content  w-screen h-screen flex items-center ">
+        <div className="projects-content">
           <div className="local-loop rounded-lg">
             <div className="project-text">
-              <h2 className="projects-header text-white text-4xl font-sedgwick">
+              <h2 className="projects-header text-white text-5xl font-sedgwick">
                 Local Loop
               </h2>
-              <p className="text-white text-xl">
+              <p className=" text-white text-2xl">
                 Final Project from Le Wagon Bootcamp. This phone application was
                 made with Ruby on Rails using MVC. contains validations,
                 Database created with Postgresql. In the front-end we can find
@@ -34,7 +34,7 @@ const Projects = () => {
             <CarouselOrientation />
           </div>
 
-          <div className="sprayer flex flex-col justify-center items-center">
+          <div className="sprayer sprayer-bigscreen flex flex-col justify-center items-center">
             <img
               src={sprayer}
               className="w-7/12 rotate-45"

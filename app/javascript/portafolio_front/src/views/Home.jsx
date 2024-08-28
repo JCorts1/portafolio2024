@@ -22,10 +22,10 @@ const Home = () => {
   return (
     <div className='home  m-0 p-0 '>
       <div className="home-filter">
-      <div className='maincard w-5/12 h-5/6 rounded-lg flex flex-col justify-center items-center'>
+      <div className='maincard  rounded-lg flex flex-col justify-center items-center'>
         <div className="avatar"></div>
         <h1 className='text-white text-6xl m-10 font-sedgwick'>I am Jay Cortes</h1>
-        <h2 className='text-white text-3xl'>Full_Stack Web_Developer</h2>
+        <h2 className='text-white text-center text-3xl'>Full_Stack Web_Developer</h2>
       </div>
       <div className='presentation-father flex flex-col justify-center items-center'>
         <div className='presentation rounded-lg flex flex-col items-center'>
@@ -49,9 +49,9 @@ const Home = () => {
           </div>
         </div>
         <div className="links grid grid-cols-2 gap-4 items-center mt-6 mb-10">
-          <Link to="/projects"><img className="img-linkprojects rounded-lg" src={projectsimg} alt="" /></Link>
-          <Link to="/blog"><img className="img-linkblog rounded-lg" src={blogimg} alt="" /></Link>
-          <Link to="/contact"><img className="img-linkcontact rounded-lg" src={contactimg} alt="" /></Link>
+          <Link to="/projects"><img className="img-link img-linkprojects rounded-lg" src={projectsimg} alt="" /></Link>
+          <Link to="/blog"><img className="img-link img-linkblog rounded-lg" src={blogimg} alt="" /></Link>
+          <Link to="/contact"><img className="img-link img-linkcontact rounded-lg" src={contactimg} alt="" /></Link>
           <ResumeDownload className="img-linkresume"/>
         </div>
       </div>

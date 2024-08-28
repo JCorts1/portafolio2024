@@ -4,6 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed; /* Keeps the background fixed */
+    width: 100vw;
+    height: 100vh; /* Keep the height fixed to the viewport height */
+    overflow-y: auto;
+    background-size:inherit;
 }
 
 .home-filter {
@@ -12,14 +17,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-  .home {
-    background-attachment: fixed; /* Keeps the background fixed */
-    width: 100vw;
-    height: 100vh; /* Keep the height fixed to the viewport height */
-    overflow-y: auto;
-    background-size:inherit;
-  }
 
   .home-filter {
     background-attachment: fixed; /* Keeps the background fixed */
@@ -64,6 +61,35 @@
     width: 180px;
   }
 
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1580px) {
+
+  .home-filter {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .maincard {
+    width: 42%;
+    height: 80%;
+  }
+
+  .presentation-father {
+    width: 42%;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .img-linkblog {
+    width: 200px;
+  }
+
+  .img-linkresume {
+    width: 250px;
+  }
 }
 
 .maincard {

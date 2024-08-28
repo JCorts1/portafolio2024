@@ -21,7 +21,7 @@ const Navbar = () => {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-primary text-white mr-10"><FontAwesomeIcon className="text-2xl" icon={faBars} /></NavigationMenuTrigger>
-            <NavigationMenuContent className="nav-content bg-primary">
+            <NavigationMenuContent className="nav-content">
               <NavigationMenuLink className="nav-item font-sedgwick m-5"><Link to="/">Home</Link></NavigationMenuLink>
               <NavigationMenuLink className="nav-item font-sedgwick m-5"><Link to="/projects">Projects</Link></NavigationMenuLink>
               <NavigationMenuLink className="nav-item font-sedgwick m-5"><Link to="/blog">Blog</Link></NavigationMenuLink>

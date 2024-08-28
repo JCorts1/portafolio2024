@@ -9,7 +9,7 @@ const ResumeDownload = () => {
         download="JuanCortes_Resume.pdf" // This suggests the download filename
         className="download-button"
       >
-        <img className="img-link w-56 rounded-lg" src={resumeimg} alt="" />
+        <img className="img-linkresume rounded-lg" src={resumeimg} alt="" />
       </a>
     </div>
   );

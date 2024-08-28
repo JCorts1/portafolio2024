@@ -1,12 +1,10 @@
-.navbar {
-  background-color: blue;
-}
+
 
 .nav-content {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color: transparent;
+  background-color: #000;
   color: #fff;
   border: none;
 }

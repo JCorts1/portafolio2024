@@ -5,10 +5,45 @@
   background-position: bottom;
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
 }
 
 .projects-filter {
   background: rgb(32,32,32);
   background: radial-gradient(circle, rgba(32,32,32,0.6460959383753502) 7%, rgba(0,0,0,0.6629026610644257) 63%);
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .local-loop {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-text {
+    display: flex;
+    flex-direction: column;
+    width: screen;
+    text-align: left;
+    margin-bottom: 80px;
+  }
+
+  .projects-header {
+    margin-bottom: 30px;
+  }
+
+  .sprayer {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+}

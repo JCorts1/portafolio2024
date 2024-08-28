@@ -16,7 +16,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-end p-10">
+    <div className="nav-projects flex justify-end">
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>

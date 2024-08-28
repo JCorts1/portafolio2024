@@ -1,19 +1,20 @@
 import "../styles/Projects.css";
 import { CarouselOrientation } from "@/components/CarouselOrientation";
 import Navbar from "@/components/Navbar";
+import sprayer from "../img/sprayer.png"
 
 const Projects = () => {
   return (
-    <div className="projects w-screen h-screen flex justify-center items-center">
-      <div className="projects-filter w-screen h-screen flex flex-col">
+    <div className="projects w-screen h-screen">
+      <div className="projects-filter w-screen h-screen">
         <Navbar />
         <div className="projects-content  w-screen h-screen flex items-center ">
-          <div className="local-loop ml-20 p-10 w-6/12 h-5/6 rounded-lg flex justify-between items-center">
-            <div className="project-text w-60 flex flex-col">
-              <h2 className="text-white text-4xl mb-7 font-sedgwick">
+          <div className="local-loop rounded-lg">
+            <div className="project-text">
+              <h2 className="projects-header text-white text-4xl font-sedgwick">
                 Local Loop
               </h2>
-              <p className="text-white text-xl w-60">
+              <p className="text-white text-xl">
                 Final Project from Le Wagon Bootcamp. This phone application was
                 made with Ruby on Rails using MVC. contains validations,
                 Database created with Postgresql. In the front-end we can find
@@ -33,9 +34,9 @@ const Projects = () => {
             <CarouselOrientation />
           </div>
 
-          <div className="w-6/12 flex flex-col justify-center items-center">
+          <div className="sprayer flex flex-col justify-center items-center">
             <img
-              src="./src/img/test.png"
+              src={sprayer}
               className="w-7/12 rotate-45"
               alt="can-graffity"
             />

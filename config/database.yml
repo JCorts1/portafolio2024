@@ -21,7 +21,9 @@ default: &default
 
 development:
   <<: *default
-  database: portafolio_development
+  url: <%= ENV["MY_APP_DATABASE_URL"] %>
+  # database: portafolio_development
+
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -79,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["MY_APP_DATABASE_URL"] %>
   database: portafolio_production
   username: portafolio
   password: <%= ENV["PORTAFOLIO_DATABASE_PASSWORD"] %>

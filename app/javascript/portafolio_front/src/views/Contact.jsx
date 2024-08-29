@@ -26,15 +26,15 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact-form flex justify-center items-center">
-      <div className="contact-filter w-screen h-screen flex flex-col">
+    <div className="contact-form">
+      <div className="contact-filter">
         <Navbar />
-        <div className="contact-content w-screem h-5/6 flex justify-center items-center">
-          <div className="card-form w-8/12 h-5/6 rounded-lg flex">
-            <div className="form-side w-6/12 h-full flex justify-center">
+        <div className="contact-content">
+          <div className="card-form">
+            <div className="form-side flex justify-center">
               <form
                 onSubmit={handleSubmit}
-                className="form-post flex flex-col justify-center items-center"
+                className="form-post"
               >
                 <div className="name-post flex flex-col text-xl mb-4">
                   <label htmlFor="nameMessage" className="text-white">
@@ -43,7 +43,7 @@ const Contact = () => {
                   <input
                     value={message.name}
                     id="nameMessage"
-                    className="w-56 rounded-lg"
+                    className="name-input w-56 rounded-lg"
                     onChange={(event) => {
                       setMessage({ ...message, name: event.target.value });
                     }}
@@ -59,7 +59,7 @@ const Contact = () => {
                   </label>
                   <input
                     value={message.email}
-                    className="w-56 rounded-lg"
+                    className="email-input w-56 rounded-lg"
                     id="emailMessage"
                     onChange={(event) => {
                       setMessage({ ...message, email: event.target.value });
@@ -75,11 +75,11 @@ const Contact = () => {
                     }}
                     cols="30"
                     rows="8"
-                    className="mt-4 rounded-lg"
+                    className="content-input mt-4 rounded-lg"
                   ></textarea>
                 </div>
 
-                <div className="button-post ml-32 mt-4">
+                <div className="button-post">
                   <button className="button mr-1 font-sedgwick" type="submit">
                     Get in Touch
                   </button>

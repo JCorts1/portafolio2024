@@ -10,6 +10,10 @@
 .contact-filter {
   background: rgb(32,32,32);
   background: radial-gradient(circle, rgba(32,32,32,0.6460959383753502) 7%, rgba(0,0,0,0.6629026610644257) 63%);
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  background-size:inherit;
 }
 
 .card-form {
@@ -32,4 +36,64 @@
   color: #fff;
   padding: 4px 8px;
   border-radius: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+
+  .card-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+    border-radius: 8px;
+  }
+
+  .form-side{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .name-input{
+    width: 17rem;
+    margin-top: 5px;
+  }
+
+  .email-input{
+    width: 17rem;
+    margin-top: 5px;
+  }
+
+  .content-input{
+    width: 17rem;
+  }
+
+  .button-post {
+    margin-top: 10px;
+    margin-left: 45%;
+  }
+
+  .image-side{
+    border-radius: 8px;
+    width: 17rem;
+    margin-bottom: 20px;
+  }
 }

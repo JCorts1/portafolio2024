@@ -1,6 +1,6 @@
 databases:
-  - name: blogtest
-    databaseName: blogtest
+  - name: MY_APP_DATABASE_URL
+    databaseName: MY_APP_DATABASE_URL
     user: jay
 
 services:

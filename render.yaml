@@ -1,6 +1,6 @@
 databases:
-  - name: blog-test
-    databaseName: blog-test
+  - name: blog_test
+    databaseName: blog_test
     user: jay
 
 services:

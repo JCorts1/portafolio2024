@@ -1,6 +1,6 @@
 databases:
   - name: blog-test
-    databaseName: blog-test
+    databaseName: blog_test  # Changed hyphen to underscore
     user: jay
 
 services:

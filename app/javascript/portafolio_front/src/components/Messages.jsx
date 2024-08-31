@@ -15,7 +15,7 @@ const Messages = () => {
 
   return (
     <div className='bg-red-600'>
-      <h1>test</h1>
+      <h1>test1</h1>
     </div>
   )
 }

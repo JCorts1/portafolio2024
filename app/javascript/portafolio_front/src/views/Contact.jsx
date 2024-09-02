@@ -19,18 +19,21 @@ const Contact = () => {
       message: message,
     };
 
-    axios
-      .post(
-        "http://13.51.37.112:3000/messages",
-        JSON.stringify(data), // Convert the data object to a JSON string
-        {
-          headers: {
-            "Content-Type": "application/json", // Set the content type to JSON
-          },
-        }
-      )
+    fetch("http://13.51.37.112:3000/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data), // Convert the data object to a JSON string
+    })
       .then((response) => {
-        console.log(response.data);
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json(); // Parse the JSON from the response
+      })
+      .then((data) => {
+        console.log(data);
         setMessage({
           name: "",
           email: "",
@@ -41,6 +44,7 @@ const Contact = () => {
         console.error("There was an error submitting the message:", error);
       });
   }
+
   return (
     <div className="contact-form">
       <div className="contact-filter">

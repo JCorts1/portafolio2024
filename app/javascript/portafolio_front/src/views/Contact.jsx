@@ -13,18 +13,34 @@ const Contact = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    // Assuming 'message' is a state object containing the data you want to send
+    const data = {
+      message: message,
+    };
+
     axios
-      .post("http://13.51.37.112:3000/messages", { message: message })
+      .post(
+        "http://13.51.37.112:3000/messages",
+        JSON.stringify(data), // Convert the data object to a JSON string
+        {
+          headers: {
+            "Content-Type": "application/json", // Set the content type to JSON
+          },
+        }
+      )
       .then((response) => {
-        console.log(response);
+        console.log(response.data);
         setMessage({
           name: "",
           email: "",
           content: "",
         });
+      })
+      .catch((error) => {
+        console.error("There was an error submitting the message:", error);
       });
   }
-
   return (
     <div className="contact-form">
       <div className="contact-filter">

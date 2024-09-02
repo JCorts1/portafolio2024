@@ -7,7 +7,7 @@ const Messages = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:3000/messages")
+      .get("http://13.51.37.112:3000/messages")
       .then(function (response) {
         console.log(response);
       });

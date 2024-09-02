@@ -14,7 +14,7 @@ const BlogCreate = () => {
   function handleSubmit(event) {
     event.preventDefault();
     axios
-      .post("http://127.0.0.1:3000/blogs", {blog: blog});
+      .post("http://13.51.37.112:3000/blogs", {blog: blog});
       console.log(blog);
   }
 

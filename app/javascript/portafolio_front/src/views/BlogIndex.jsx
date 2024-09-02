@@ -8,7 +8,7 @@ const BlogIndex = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:3000/blogs").then(function (response) {
+    axios.get("http://13.51.37.112:3000/blogs").then(function (response) {
       setBlogs(response.data);
       console.log(response);
     });

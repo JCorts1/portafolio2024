@@ -14,7 +14,7 @@ const Contact = () => {
   function handleSubmit(event) {
     event.preventDefault();
     axios
-      .post("http://127.0.0.1:3000/messages", { message: message })
+      .post("http://13.51.37.112:3000/messages", { message: message })
       .then((response) => {
         console.log(response);
         setMessage({

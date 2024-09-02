@@ -5,7 +5,7 @@ const ResumeDownload = () => {
   return (
     <div className="resume-download">
       <a
-        href="http://127.0.0.1:3000/JuanCortes_Resume.pdf"
+        href="http://13.51.37.112:3000/JuanCortes_Resume.pdf"
         download="JuanCortes_Resume.pdf" // This suggests the download filename
         className="download-button"
       >

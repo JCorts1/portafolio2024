@@ -95,5 +95,48 @@
     border-radius: 8px;
     width: 17rem;
     margin-bottom: 20px;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 2560px) {
+  .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    margin-top: 30px;
+  }
+
+  .card-form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .form-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-side {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-contact{
+    margin-top: 30px;
+  }
+
 }

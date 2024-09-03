@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import "../styles/Contact.css";
 import Navbar from "@/components/Navbar";
+import letscreate from "../img/letscreate.png"
 
 const Contact = () => {
   const [message, setMessage] = useState({
@@ -106,13 +107,8 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-            <div className="image-side w-6/12 flex flex-col justify-evenly items-center">
-              <img
-                className="w-11/12"
-                src="./src/img/letscreate.png"
-                alt="lets-create"
-              />
-              <img className="w-10/12" src="./src/img/together.png" alt="" />
+            <div className="image-side flex flex-col">
+              <img className="w-10/12" src={letscreate} alt="let's create" />
             </div>
           </div>
         </div>

@@ -6,10 +6,12 @@ import Home from "./views/Home";
 import Contact from "./views/Contact";
 import Projects from "./views/Projects";
 import BlogCreate from "./views/BlogCreate";
-import BlogIndex from "./views/BlogIndex"
+import BlogIndex from "./views/BlogIndex";
+import ContactReader from './views/ContactReader';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import "./App.css";
+
 
 const routes = createBrowserRouter([
   {
@@ -18,6 +20,7 @@ const routes = createBrowserRouter([
   },
   { path: '/projects', element: <Projects /> },
   { path: '/contact', element: <Contact /> },
+  { path: '/contact-reader', element: <ContactReader /> },
   { path: '/blog-post', element: <BlogCreate /> },
   { path: '/blog', element: <BlogIndex /> },
 ]);

@@ -21,7 +21,7 @@ default: &default
 
 development:
   <<: *default
-  url: postgresql://postgres:DkaVqstejJTPfvWTeEyARJAQLJznTZrl@autorack.proxy.rlwy.net:19227/railway
+  url: <%= ENV["DATABASE_URL"] %>
   # database: portafolio_development
 
 
@@ -81,7 +81,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["MY_APP_DATABASE_URL"] %>
+  url: <%= ENV["DATABASE_URL"] %>
   database: portafolio_production
   username: portafolio
   password: <%= ENV["PORTAFOLIO_DATABASE_PASSWORD"] %>

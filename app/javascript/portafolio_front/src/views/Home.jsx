@@ -24,7 +24,7 @@ const Home = () => {
       <div className="home-filter">
       <div className='maincard  rounded-lg flex flex-col justify-center items-center'>
         <div className="avatar"></div>
-        <h1 className='text-white text-6xl m-10 font-sedgwick'>I am Jay Cortes</h1>
+        <h1 className='text-white text-center text-6xl m-10 font-sedgwick'>I am Jay Cortes</h1>
         <h2 className='text-white text-center text-3xl font-bebas'>Full_Stack Web_Developer</h2>
       </div>
       <div className='presentation-father flex flex-col justify-center items-center'>

@@ -8,7 +8,7 @@ const BlogIndex = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    axios.get("http://13.51.37.112:3000/blogs").then(function (response) {
+    axios.get("https://portafolio2024-production.up.railway.app/blogs").then(function (response) {
       setBlogs(response.data);
       console.log(response);
     });

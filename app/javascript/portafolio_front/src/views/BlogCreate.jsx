@@ -14,7 +14,7 @@ const BlogCreate = () => {
   function handleSubmit(event) {
     event.preventDefault();
     axios
-      .post("http://13.51.37.112:3000/blogs", {blog: blog});
+      .post("https://portafolio2024-production.up.railway.app/blogs", {blog: blog});
       console.log(blog);
   }
 

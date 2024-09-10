@@ -7,7 +7,7 @@ const ContactReader = () => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    axios.get("http://13.51.37.112:3000/messages").then(function (response) {
+    axios.get("https://portafolio2024-production.up.railway.app/messages").then(function (response) {
       setMessages(response.data);
       console.log(response);
     });

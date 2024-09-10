@@ -7,7 +7,7 @@ const Messages = () => {
 
   useEffect(() => {
     axios
-      .get("http://13.51.37.112:3000/messages")
+      .get("https://portafolio2024-production.up.railway.app/messages")
       .then(function (response) {
         console.log(response);
       });

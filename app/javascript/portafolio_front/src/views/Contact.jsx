@@ -20,7 +20,7 @@ const Contact = () => {
       message: message,
     };
 
-    fetch("http://13.51.37.112:3000/messages", {
+    fetch("https://portafolio2024-production.up.railway.app/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -74,6 +74,7 @@ module.exports = {
       fontFamily: {
         sans: ['Roboto Condensed'], // Add Roboto Condensed to the sans-serif stack
         sedgwick: ['Sedgwick Ave'], // Create a custom font family for Sedgwick Ave
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },

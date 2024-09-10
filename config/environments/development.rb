@@ -57,6 +57,8 @@ Rails.application.configure do
   config.active_job.verbose_enqueue_logs = true
 
 
+  config.hosts << "portafolio2024-production.up.railway.app"
+  config.hosts << "portafolio2024-production.up.railway.app"
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 

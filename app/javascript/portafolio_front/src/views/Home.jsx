@@ -25,11 +25,11 @@ const Home = () => {
       <div className='maincard  rounded-lg flex flex-col justify-center items-center'>
         <div className="avatar"></div>
         <h1 className='text-white text-6xl m-10 font-sedgwick'>I am Jay Cortes</h1>
-        <h2 className='text-white text-center text-3xl'>Full_Stack Web_Developer</h2>
+        <h2 className='text-white text-center text-3xl font-bebas'>Full_Stack Web_Developer</h2>
       </div>
       <div className='presentation-father flex flex-col justify-center items-center'>
         <div className='presentation rounded-lg flex flex-col items-center'>
-          <p className='text-presentation mb-10 text-white text-left text-2xl p-2'>Hey! You can call me Jay!
+          <p className='text-presentation mb-10 text-white text-left text-2xl p-2 font-montserrat'>Hey! You can call me Jay!
             I am a Web Developer with a strong foundation in full-stack development. Graduated from Le Wagon Bootcamp.
             With more than one year of experience.
           </p>

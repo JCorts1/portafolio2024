@@ -63,8 +63,37 @@
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 2560px) {
+@media only screen and (min-width: 601px) and (max-width: 1600px) {
 
+  .home-filter {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .maincard {
+    margin-top: -20px;
+    width: 42%;
+    height: 86%;
+  }
+
+  .presentation-father {
+    width: 42%;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .img-linkblog {
+    width: 200px;
+  }
+
+  .img-linkresume {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 2450px) {
   .home-filter {
     height: 100%;
     display: flex;
@@ -75,6 +104,7 @@
   .maincard {
     width: 42%;
     height: 80%;
+    margin-right: 40px;
   }
 
   .presentation-father {

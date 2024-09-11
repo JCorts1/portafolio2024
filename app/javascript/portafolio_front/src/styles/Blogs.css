@@ -12,7 +12,7 @@
 .blog-filter {
   background: rgb(32,32,32);
   background: radial-gradient(circle, rgba(32,32,32,0.6460959383753502) 7%, rgba(0,0,0,0.6629026610644257) 63%);
-  width: 100vw;
+  width: 100%;
   min-height: 100vh; /* Container takes at least the height of the viewport */
   display: flex;
   flex-direction: column;
@@ -48,9 +48,8 @@
 @media only screen and (max-width: 600px) {
 
   .blog-content {
-    width: 85%;
+    width: 100%; /* Ensure it takes the full width */
     grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
   }
 }

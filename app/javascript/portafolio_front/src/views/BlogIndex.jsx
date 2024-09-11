@@ -31,7 +31,7 @@ const BlogIndex = () => {
                   <h1 className="text-white text-5xl font-sedgwick">
                     {blog.title}
                   </h1>
-                  <p className="blog-text text-2xl mt-10 w-5/6 h-3/4 rounded-lg p-10">
+                  <p className="blog-text font-montserrat text-xl mt-10 w-5/6 h-fit p-4 rounded-lg p-10">
                     {blog.content}
                   </p>
                 </div>

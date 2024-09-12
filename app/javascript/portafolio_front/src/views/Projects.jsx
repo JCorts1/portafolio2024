@@ -14,7 +14,7 @@ const Projects = () => {
               <h2 className="projects-header text-white text-5xl font-sedgwick">
                 Local Loop
               </h2>
-              <p className=" text-white text-2xl">
+              <p className=" text-white font-montserrat text-xl">
                 Final Project from Le Wagon Bootcamp. This phone application was
                 made with Ruby on Rails using MVC. contains validations,
                 Database created with Postgresql. In the front-end we can find
@@ -40,7 +40,7 @@ const Projects = () => {
               className="w-7/12 rotate-45"
               alt="can-graffity"
             />
-            <h2 className="text-white text-4xl font-sedgwick">
+            <h2 className="text-white text-4xl text-center font-sedgwick">
               And there's more coming!
             </h2>
           </div>

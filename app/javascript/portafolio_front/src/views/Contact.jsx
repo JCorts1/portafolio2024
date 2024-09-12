@@ -55,11 +55,11 @@ const Contact = () => {
             <div className="form-side flex justify-center">
               <form
                 onSubmit={handleSubmit}
-                className="form-post"
+                className="form-post font-montserrat"
               >
                 <div className="name-post flex flex-col text-xl mb-4">
                   <label htmlFor="nameMessage" className="text-white">
-                    Your name / Organization
+                    Your name:
                   </label>
                   <input
                     value={message.name}
@@ -76,7 +76,7 @@ const Contact = () => {
                     htmlFor="emailMessage"
                     className="text-white text-xl flex flex-col"
                   >
-                    Email
+                    Email:
                   </label>
                   <input
                     value={message.email}
